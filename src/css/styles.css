@@ -19,16 +19,24 @@ body {
   margin-bottom: 16px;
 }
 
-.country__flag{
+.country__flag, .country__flag--small{
   display:flex;
   margin-right: 10px;
   align-items: center;
 }
 
+
+.country__name, .country__name--small {
+  display: flex;
+    align-items: center;
+}
+
 .country__name {
   font-size: 40px;
-  display: flex;
-  align-items: center;
+}
+
+.country__name--small {
+  font-size: 20px;
 }
 
 .country-list {
