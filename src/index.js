@@ -21,6 +21,7 @@ function onSearchBoxInput(event) {
     const name = event.target.value.trim();
 
     if (name === ``) {
+        refs.countryList.innerHTML = "";
         return;
     }
 
@@ -66,6 +67,4 @@ function countryMarkup(countries) {
         })
         return;
     }
-    Notify.failure("Oops, there is no country with that name")
-    return;
 }
